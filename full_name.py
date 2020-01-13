@@ -1,5 +1,8 @@
 first_name = "roger"
 last_name = "mayer"
 
-full_name = "{first_name} {last_name}"
-print("Hello, {full_name.title()}!")
+full_name = "f{first_name} {last_name}"
+print(full_name)
+
+print("Hello, f{full_name.title()}!")
+
