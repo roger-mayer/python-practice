@@ -46,3 +46,18 @@ print(to_str(123))
 def how_many_seconds(hours):
     seconds = hours * 60 * 60
     return seconds
+
+
+# return first element in list
+
+def get_first_value(arr_list):
+    return arr_list[0]
+
+
+print(get_first_value([1, 2, 3]))
+
+
+# convert minutes to seconds
+
+def convert(minutes):
+    return minutes * 60
