@@ -20,4 +20,4 @@ def tri_area(base, height):
     return area
 
 
-print tri_area(3, 2)
+print(tri_area(3, 2))
