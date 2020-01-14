@@ -39,3 +39,10 @@ def to_str(num):
 
 
 print(to_str(123))
+
+
+# convert hours to seconds
+
+def how_many_seconds(hours):
+    seconds = hours * 60 * 60
+    return seconds
