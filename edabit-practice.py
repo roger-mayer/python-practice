@@ -61,3 +61,9 @@ print(get_first_value([1, 2, 3]))
 
 def convert(minutes):
     return minutes * 60
+
+
+# Find the Smallest Number in a List
+def find_smallest_num(lst):
+    return min(lst)
+
