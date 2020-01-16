@@ -13,7 +13,7 @@ print(z)
 
 x = "Python is "
 y = "awesome"
-z =  x + y
+z = x + y
 print(z)
 
 """If you create a variable with the same name inside
@@ -22,9 +22,13 @@ and can only be used inside the function.
 The global variable with the same name will remain as it was,
 global and with the original value."""
 x = "awesome"
+
+
 def myfunc():
     x = "fantastic"
     print("Python is " + x)
+
+
 myfunc()
 print("Python is " + x)
 """There are three numeric types in Python:
@@ -33,9 +37,9 @@ float
 complex
 Variables of numeric types are created when you assign a value to them:
 Example"""
-x = 1    # int
+x = 1  # int
 y = 2.8  # float
-z = 1j   # complex
+z = 1j  # complex
 """To verify the type of any object in Python, use the type() function:
 Example"""
 print(type(x))
