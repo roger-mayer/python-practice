@@ -17,3 +17,10 @@ print("Languages: \nPython\nCSS\nJavaScript")  # new line
 
 print("Languages: \n\tPython\n\tCSS\n\tJavaScript") # new line
 
+# removing whitespace
+
+extra_space = "hello   "
+print(extra_space, "|")
+extra_space = extra_space.rstrip()
+print(extra_space, "|")
+
