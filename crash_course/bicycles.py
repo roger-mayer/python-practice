@@ -26,3 +26,7 @@ print(bicycles)
 
 bicycles.remove('redline')  # remove based on value
 print(bicycles)
+
+for bike in bicycles:
+    print(f'{bike.title()} is a bicycle')
+
