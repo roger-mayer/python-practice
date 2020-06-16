@@ -24,7 +24,7 @@ def minCoins(coins, m, V):
 
         # Go through all coins smaller than i
         for j in range(m):
-            if (coins[j] <= i):
+            if coins[j] <= i:
                 sub_res = table[i - coins[j]]
                 if (sub_res != sys.maxsize and
                         sub_res + 1 < table[i]):
