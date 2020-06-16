@@ -25,10 +25,10 @@ def minCoins(coins, m, V):
         # Go through all coins smaller than i
         for j in range(m):
             if coins[j] <= i:
-                sub_res = table[i - coins[j]]
-                if (sub_res != sys.maxsize and
-                        sub_res + 1 < table[i]):
-                    table[i] = sub_res + 1
+                sub = table[i - coins[j]]
+                if (sub != sys.maxsize and
+                        sub + 1 < table[i]):
+                    table[i] = sub + 1
     return table[V]
 
 
@@ -38,7 +38,7 @@ if __name__ == "__main__":
     total = int(total)
     coins = [1, 3, 5]
     m = len(coins)
-    V = 11
+    V = total
     print("Minimum coins required is ",
           minCoins(coins, m, V))
 
