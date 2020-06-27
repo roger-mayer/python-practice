@@ -1,28 +1,16 @@
-# A Dynamic Programming based Python3 program to
-# find minimum of coins to make a given change V
 import sys
 
 
-# m is size of coins array (number of
-# different coins)
 def minCoins(coins, m, V):
-    # table[i] will be storing the minimum
-    # number of coins required for i value.
-    # So table[V] will have result
     table = [0 for i in range(V + 1)]
 
-    # Base case (If given value V is 0)
     table[0] = 0
 
-    # Initialize all table values as Infinite
     for i in range(1, V + 1):
         table[i] = sys.maxsize
 
-    # Compute minimum coins required
-    # for all values from 1 to V
     for i in range(1, V + 1):
 
-        # Go through all coins smaller than i
         for j in range(m):
             if coins[j] <= i:
                 sub = table[i - coins[j]]
@@ -32,14 +20,11 @@ def minCoins(coins, m, V):
     return table[V]
 
 
-# Driver Code
 if __name__ == "__main__":
-    total = input("enter total ")
-    total = int(total)
+    total = input("enter total $")
+    V = int(total)
     coins = [1, 3, 5]
     m = len(coins)
-    V = total
-    print("Minimum coins required is ",
+
+    print("Minimum coins required is",
           minCoins(coins, m, V))
-
-
