@@ -5,3 +5,11 @@ for car in cars:
         print(car.upper())
     else:
         print(car.title())
+
+# conditional test
+
+car = 'bmw'
+print(car == 'bmw')  # true
+
+car = 'Audi'
+print(car == "audi")  # false
