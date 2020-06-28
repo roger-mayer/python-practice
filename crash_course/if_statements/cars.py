@@ -12,4 +12,9 @@ car = 'bmw'
 print(car == 'bmw')  # true
 
 car = 'Audi'
-print(car == "audi")  # false
+print(car == 'audi')  # false
+
+print(car.lower() == 'audi')  # true
+
+
+
