@@ -6,3 +6,8 @@ def describe_pet(pet_name, animal_type='fish'):
 describe_pet('dog', 'sky')
 describe_pet('cat', 'waffles')
 describe_pet('goldie')
+
+
+describe_pet('dog', 'sky')
+describe_pet('cat', 'waffles')
+describe_pet('goldie')
