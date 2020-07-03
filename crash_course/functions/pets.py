@@ -8,6 +8,3 @@ describe_pet('cat', 'waffles')
 describe_pet('goldie')
 
 
-describe_pet('dog', 'sky')
-describe_pet('cat', 'waffles')
-describe_pet('goldie')
