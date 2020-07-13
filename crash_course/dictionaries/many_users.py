@@ -18,12 +18,13 @@ users = {
 
 }
 
+
 for username, user_info in users.items():
     print(f"\nusername: {username}")
     full_name = f"{user_info['first']} {user_info['last']}"
     user_age = user_info['age']
 
-    print(f"Full Name: {full_name.title}")
+    print(f"Full Name: {full_name.title()}")
     print(f"Age: {user_age}")
 
 
